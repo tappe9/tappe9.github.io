@@ -1,0 +1,142 @@
+:root {
+  color-scheme: light dark;
+  --background: #f7f7f4;
+  --surface: #ffffff;
+  --text: #202124;
+  --muted: #5f6368;
+  --line: #d9d9d2;
+  --accent: #176a64;
+  --accent-surface: #e8f3ef;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #161716;
+    --surface: #202220;
+    --text: #f2f2ed;
+    --muted: #b6bbb5;
+    --line: #3a3d39;
+    --accent: #8fd6ca;
+    --accent-surface: #1d332f;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, sans-serif;
+  line-height: 1.75;
+}
+
+a {
+  color: var(--accent);
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.18em;
+}
+
+.page {
+  width: min(920px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 48px 0 72px;
+}
+
+.document {
+  width: min(760px, calc(100% - 32px));
+}
+
+.site-header {
+  margin-bottom: 32px;
+}
+
+.eyebrow {
+  margin: 0 0 8px;
+  color: var(--accent);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(2rem, 6vw, 4rem);
+  line-height: 1.1;
+}
+
+h2 {
+  margin: 40px 0 12px;
+  padding-top: 24px;
+  border-top: 1px solid var(--line);
+  font-size: 1.45rem;
+  line-height: 1.35;
+}
+
+h3 {
+  margin: 24px 0 8px;
+  font-size: 1.05rem;
+  line-height: 1.4;
+}
+
+p {
+  margin: 0 0 16px;
+}
+
+.lead {
+  max-width: 680px;
+  margin-top: 16px;
+  color: var(--muted);
+  font-size: 1.08rem;
+}
+
+.policy-list {
+  display: grid;
+  gap: 12px;
+}
+
+.policy-card {
+  display: block;
+  padding: 18px 20px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--text);
+  text-decoration: none;
+}
+
+.policy-card:hover {
+  border-color: var(--accent);
+  background: var(--accent-surface);
+}
+
+.policy-title,
+.policy-meta {
+  display: block;
+}
+
+.policy-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.policy-meta {
+  margin-top: 4px;
+  color: var(--muted);
+}
+
+.breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 24px;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.breadcrumb a {
+  color: inherit;
+}
