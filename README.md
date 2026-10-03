@@ -10,6 +10,8 @@
 
 新しいアプリを追加する場合は、`<AppName>/privacy-policy/index.html` を追加し、トップページの一覧へリンクを追加します。
 
+ArrowNavi の3言語ランディングページと保守・公開後確認手順は [docs/arrownavi-landing.md](docs/arrownavi-landing.md) を参照してください。
+
 ## 公開 URL
 
 - ArrowNavi Compass: https://tappe9.github.io/ArrowNavi/privacy-policy/
